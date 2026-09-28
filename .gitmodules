@@ -2,3 +2,6 @@
 	path = server
 	url = https://github.com/OCA/OpenUpgrade.git
 	branch = 14.0
+	shallow = true
+[submodule "OpenUpgrade"]
+	shallow = true
