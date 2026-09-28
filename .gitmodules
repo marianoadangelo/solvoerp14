@@ -1,7 +1,10 @@
 [submodule "server"]
 	path = server
-	url = https://github.com/OCA/OpenUpgrade.git
+	url = https://github.com/odoo/odoo.git
 	branch = 14.0
 	shallow = true
 [submodule "OpenUpgrade"]
+	path = OpenUpgrade
+	url = https://github.com/OCA/OpenUpgrade.git
+	branch = 14.0
 	shallow = true
