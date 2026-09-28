@@ -1,0 +1,81 @@
+version: "3.7"
+# MIGRATION DOCKER COMPOSE
+# This file uses your EXISTING database container from docker-compose.yml
+# It only creates a temporary Odoo container to run the migration
+# NOTE: This compose file does NOT create a new database
+# It uses your existing database container from docker-compose.yml
+#
+# USAGE:
+# 1. Make sure your database is running:
+#    docker-compose up -d db-odoo-14
+#
+# 2. Run migration with existing database:
+#    DB_NAME=XXX docker-compose -f docker-compose-migrate.yml run --rm odoo-14-migrate
+#
+#    Run migration copying from v14 container (different server):
+#    SOURCE_HOST=db-odoo-13 SOURCE_USER=odoo SOURCE_PASSWORD=odoo DB_SOURCE=solvo_v13 DB_NAME=XXX COPY_DB=true docker-compose -f docker-compose-migrate.yml run --rm odoo-14-migrate
+#
+# The migration container will connect to your existing database and stop after migration
+
+services:
+  odoo-14-migrate:
+    build:
+      context: ./
+      dockerfile: ./docker/dockerfile/Dockerfile
+      args:
+        BUILD_PATH: ""
+    container_name: odoo-14-migrate
+    command: >
+      bash -c "
+      chmod +x /opt/scripts/migrate.sh &&
+      /opt/scripts/migrate.sh
+      "
+    volumes:
+      - odoo-data-14:/var/lib/odoo
+      - ./:/opt/odoo/
+      - ./docker/scripts:/opt/scripts
+      # Persistent logs and dumps (accessible from host)
+      - ./migration_logs:/opt/odoo/migration_logs
+      - ./migration_dumps:/opt/odoo/migration_dumps
+      # Source filestore (read-only) - mount v13 filestore volume
+      - solvo-erp_odoo-data-13:/mnt/source_filestore:ro
+    environment:
+      - HOST=db-odoo-14
+      - USER=odoo
+      - PASSWORD=odoo
+      # Migration specific variables
+      - DB_NAME=${DB_NAME:-solvo}
+      - DB_SOURCE=${DB_SOURCE:-}
+      - COPY_DB=${COPY_DB:-false}
+      - CONFIG_FILE=/opt/odoo/server-migrate.conf
+      - PRE_MIGRATION_SQL=/opt/odoo/migration_tools/pre_migration.sql
+      # Remote source database (for copying from v13 container)
+      - SOURCE_HOST=${SOURCE_HOST:-}
+      - SOURCE_USER=${SOURCE_USER:-odoo}
+      - SOURCE_PASSWORD=${SOURCE_PASSWORD:-odoo}
+      - SOURCE_PORT=${SOURCE_PORT:-5432}
+      # Source container for filestore copy (deprecated - using volume mount)
+      - SOURCE_FILESTORE_CONTAINER=${SOURCE_FILESTORE_CONTAINER:-solvoerp13_odoo-13_1}
+      # Path where source filestore is mounted
+      - SOURCE_FILESTORE_PATH=/mnt/source_filestore/filestore
+    networks:
+      - solvoerp14_default
+      - solvo-erp_default
+    external_links:
+      - solvoerp14_db-odoo-14_1:db-odoo-14
+
+networks:
+  solvoerp14_default:
+    external: true
+    name: solvoerp14_default
+  solvo-erp_default:
+    external: true
+    name: ${SOURCE_NETWORK:-solvo-erp_default}
+
+volumes:
+  odoo-data-14:
+    external: true
+    name: solvoerp14_odoo-data-14
+  solvo-erp_odoo-data-13:
+    external: true
+    name: solvo-erp_odoo-data-13

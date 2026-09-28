@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mail_template_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-05-27 17:25+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__company_id
+msgid "Company"
+msgstr "Azienda"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data__display_name
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: mail_template_multi_company
+#: model:ir.model,name:mail_template_multi_company.model_mail_template
+msgid "Email Templates"
+msgstr "Modelli e-mail"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data__id
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_ir_model_data____last_update
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,help:mail_template_multi_company.field_mail_template__original_xmlid_mail_template_id
+msgid ""
+"Mail Template that corresponds to a record having a XMLID. This record will "
+"be used when the record having a XMLID is found but cannot be accessed."
+msgstr ""
+"Modello di posta elettronica corrispondente a un record con un XMLID. Questo "
+"record verrà utilizzato quando il record con un XMLID viene trovato ma non è "
+"accessibile."
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,help:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
+msgid ""
+"Mail Templates that correspond to this record's XMLID. When this record is "
+"searched by XMLID but cannot be accessed, the first accessible substitute "
+"will be found instead."
+msgstr ""
+"Modelli di posta che corrispondono all'XMLID di questo record. Se questo "
+"record viene cercato per XMLID ma non è accessibile, verrà trovato il primo "
+"sostituto accessibile."
+
+#. module: mail_template_multi_company
+#: model:ir.model,name:mail_template_multi_company.model_ir_model_data
+msgid "Model Data"
+msgstr "Dati modello"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__original_xmlid_mail_template_id
+msgid "Original XMLID template"
+msgstr "Modello XMLID originale"
+
+#. module: mail_template_multi_company
+#: model:ir.model.fields,field_description:mail_template_multi_company.field_mail_template__substitute_xmlid_mail_template_ids
+msgid "Substitutes for XMLID template"
+msgstr "Sostituti per modello XMLID"

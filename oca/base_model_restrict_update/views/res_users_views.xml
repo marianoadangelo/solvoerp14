@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_users_form" model="ir.ui.view">
+        <field name="name">res.users.form</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form" />
+        <field name="arch" type="xml">
+            <div class="oe_button_box" name="button_box" position="inside">
+                <button
+                    name="toggle_unrestrict_model_update"
+                    class="oe_stat_button"
+                    attrs="{'invisible': [('is_readonly_user', '=', True)]}"
+                >
+                    <span style="padding: 0 10px;">Unrestrict Update</span>
+                    <field name="unrestrict_model_update" widget="boolean_toggle" />
+                </button>
+                <button name="toggle_is_readonly_user" class="oe_stat_button">
+                    <span style="padding: 0 10px;">Read-only</span>
+                    <field name="is_readonly_user" widget="boolean_toggle" />
+                </button>
+            </div>
+        </field>
+    </record>
+
+</odoo>

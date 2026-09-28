@@ -1,0 +1,131 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* product_customer_code_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-15 14:31+0000\n"
+"PO-Revision-Date: 2025-01-07 12:06+0000\n"
+"Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+"X-Launchpad-Export-Date: 2014-05-28 05:52+0000\n"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.product_customerinfo_view_search
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model,name:product_supplierinfo_for_customer_sale.model_product_customerinfo
+msgid "Customer Pricelist"
+msgstr "Listino prezzi cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_product_customerinfo__display_name
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.product_customerinfo_view_search
+msgid "Group By"
+msgstr "Raggruppa per"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_product_customerinfo__id
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,help:product_supplierinfo_for_customer_sale.field_product_customerinfo__product_id
+msgid ""
+"If not set, the vendor price will apply to all variants of this product."
+msgstr ""
+"Se non è impostato, il prezzo fornitore si applicherà a tutte le varianti di "
+"questo prodotto."
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_product_customerinfo____last_update
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__product_customer_code
+msgid "Product Customer Code"
+msgstr "Codice prodotto cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.sale_order_customerinfo_view_search
+msgid "Product Customer Info"
+msgstr "Info prodotto cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_sale_order_line__product_customer_name
+msgid "Product Customer Name"
+msgstr "Nome prodotto cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.ui.menu,name:product_supplierinfo_for_customer_sale.menu_product_customerinfo
+msgid "Product Customer info"
+msgstr "Info prodotto cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model.fields,field_description:product_supplierinfo_for_customer_sale.field_product_customerinfo__product_id
+msgid "Product Variant"
+msgstr "Variante prodotto"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.product_customerinfo_view_search
+msgid "Product template"
+msgstr "Modello prodotto"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.product_customerinfo_view_search
+msgid "Product variant"
+msgstr "Variante prodotto"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.ui.view,arch_db:product_supplierinfo_for_customer_sale.product_customerinfo_view_search
+msgid "Products"
+msgstr "Prodotti"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.actions.act_window,name:product_supplierinfo_for_customer_sale.action_product_customerinfo
+msgid "Products Customer info"
+msgstr "Info prodotti cliente"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model:ir.model,name:product_supplierinfo_for_customer_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Riga ordine di vendita"
+
+#. module: product_supplierinfo_for_customer_sale
+#: model_terms:ir.actions.act_window,help:product_supplierinfo_for_customer_sale.action_product_customerinfo
+msgid "This action displays products with customer info set."
+msgstr "Questa azione mostra i prodotti con info cliente impostate."
+
+#~ msgid ""
+#~ "Check this box if this contact is a customer. It can be selected in sales "
+#~ "orders."
+#~ msgstr ""
+#~ "Attivare se il contatto è un cliente. Può essere selezionato negli ordini "
+#~ "di vendita."
+
+#~ msgid "Is a Customer"
+#~ msgstr "È un cliente"
+
+#~ msgid "Product Template"
+#~ msgstr "Modello prodotto"
+
+#~ msgid "Supplierinfo"
+#~ msgstr "Listino di acquisto"

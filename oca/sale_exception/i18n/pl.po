@@ -1,0 +1,267 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sale_exception
+#
+# Translators:
+# OCA Transbot <transbot@odoo-community.org>, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-13 01:19+0000\n"
+"PO-Revision-Date: 2023-08-11 12:40+0000\n"
+"Last-Translator: Andrzej Gerasimuk <a.gerasimuk@archimedes.pl>\n"
+"Language-Team: Polish (https://www.transifex.com/oca/teams/23907/pl/)\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 4.17\n"
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
+msgid ""
+"<strong>There are exceptions blocking the confirmation of this Sale Order:</"
+"strong>"
+msgstr ""
+"<strong>Istnieją wyjątki blokujące potwierdzenie tego zamówienia sprzedaży:</"
+"strong>"
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
+msgid ""
+"<strong>There are exceptions on this line blocking the confirmation of this "
+"quotation:</strong>"
+msgstr ""
+"<strong>Istnieją wyjątki w tym wierszu, które blokują potwierdzenie tej "
+"oferty:</strong>"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.excep_no_dumping
+msgid "A product is sold cheaper than his cost."
+msgstr "Produkt jest sprzedawany poniżej jego kosztu."
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_exception_rule__model
+msgid "Apply on"
+msgstr "Zastosuj do"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.excep_no_sol
+msgid "At least one order line should be present in the sale"
+msgstr "W zamówieniu powinien znajdować się co najmniej jeden wiersz"
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_sales_order_filter
+msgid "Blocked in draft"
+msgstr "Zablokowany w wersji roboczej"
+
+#. module: sale_exception
+#: model:ir.actions.act_window,name:sale_exception.action_sale_exception_confirm
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_sale_exception_confirm
+msgid "Blocked in draft due to exceptions"
+msgstr "Wersja robocza zablokowana z powodu wyjątków"
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_sale_exception_confirm
+msgid "Cancel"
+msgstr "Anuluj"
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
+msgid ""
+"Click here to be able to confirm this Sale Orders regardless of the "
+"exceptions."
+msgstr ""
+"Kliknij tutaj, aby móc potwierdzić te zamówienia sprzedaży niezależnie od "
+"wyjątków."
+
+#. module: sale_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_sale_exception_confirm
+msgid "Confirm"
+msgstr "Potwierdź"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__create_uid
+msgid "Created by"
+msgstr "Utworzone przez"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__create_date
+msgid "Created on"
+msgstr "Utworzono"
+
+#. module: sale_exception
+#: model:exception.rule,name:sale_exception.exception_partner_sale_warning
+msgid "Customer sale warning"
+msgstr "Ostrzeżenie o sprzedaży do klienta"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_exception_rule__display_name
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__display_name
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Wyświetlana nazwa"
+
+#. module: sale_exception
+#: model:ir.model,name:sale_exception.model_exception_rule
+msgid "Exception Rule"
+msgstr "Reguła wyjątku"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__exception_ids
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line__exception_ids
+msgid "Exceptions"
+msgstr "Wyjątki"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__exceptions_summary
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line__exceptions_summary
+msgid "Exceptions Summary"
+msgstr "Podsumowanie wyjątków"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__exception_ids
+msgid "Exceptions to resolve"
+msgstr "Wyjątki do decyzji"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_exception_rule__id
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__id
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__ignore
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__ignore_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line__ignore_exception
+#: model_terms:ir.ui.view,arch_db:sale_exception.view_order_form
+msgid "Ignore Exceptions"
+msgstr "Ignoruj wyjątki"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_exception_rule____last_update
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm____last_update
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order____last_update
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr "Ostatnio modyfikowano"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__write_uid
+msgid "Last Updated by"
+msgstr "Ostatnio modyfikowane przez"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__write_date
+msgid "Last Updated on"
+msgstr "Ostatnia zmiana"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_order__main_exception_id
+msgid "Main Exception"
+msgstr "Główny wyjątek"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.excep_no_zip
+#: model:exception.rule,name:sale_exception.excep_no_zip
+msgid "No ZIP code on destination"
+msgstr "Brak kodu pocztowego w adresie docelowym"
+
+#. module: sale_exception
+#: model:exception.rule,name:sale_exception.excep_no_dumping
+msgid "No dumping"
+msgstr "Zakaz zaśmiecania"
+
+#. module: sale_exception
+#: model:exception.rule,name:sale_exception.excep_no_free
+msgid "No free order"
+msgstr "Brak darmowego zamówienia"
+
+#. module: sale_exception
+#: model:exception.rule,name:sale_exception.excep_no_sol
+msgid "No order lines"
+msgstr "Brak linii zamówienia"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.excep_no_stock
+#: model:exception.rule,name:sale_exception.excep_no_stock
+msgid "Not Enough Virtual Stock"
+msgstr "Niewystarczająca ilość zasobów wirtualnych"
+
+#. module: sale_exception
+#: model:exception.rule,name:sale_exception.exception_product_sale_warning
+msgid "Product warning"
+msgstr "Ostrzeżenie dotyczące produktu"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_sale_exception_confirm__related_model_id
+msgid "Sale"
+msgstr "Sprzedaż"
+
+#. module: sale_exception
+#: model:ir.actions.act_window,name:sale_exception.action_sale_test_tree
+#: model:ir.ui.menu,name:sale_exception.menu_sale_test
+msgid "Sale Exception Rules"
+msgstr "Zasady wyjątku od sprzedaży"
+
+#. module: sale_exception
+#: model:ir.model,name:sale_exception.model_sale_exception_confirm
+msgid "Sale exception confirm wizard"
+msgstr "Kreator potwierdzania wyjątków sprzedaży"
+
+#. module: sale_exception
+#: model:ir.model.fields.selection,name:sale_exception.selection__exception_rule__model__sale_order
+msgid "Sale order"
+msgstr "Zamówienie sprzedaży"
+
+#. module: sale_exception
+#: model:ir.model.fields.selection,name:sale_exception.selection__exception_rule__model__sale_order_line
+msgid "Sale order line"
+msgstr "Linia zamówienia sprzedaży"
+
+#. module: sale_exception
+#: model:ir.model.fields,field_description:sale_exception.field_exception_rule__sale_ids
+msgid "Sales"
+msgstr "Sprzedaż"
+
+#. module: sale_exception
+#: model:ir.model,name:sale_exception.model_sale_order
+msgid "Sales Order"
+msgstr "Zamówienie sprzedaży"
+
+#. module: sale_exception
+#: model:ir.model,name:sale_exception.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linia zamówienia sprzedaży"
+
+#. module: sale_exception
+#: model:ir.actions.server,name:sale_exception.ir_cron_test_orders_ir_actions_server
+#: model:ir.cron,cron_name:sale_exception.ir_cron_test_orders
+#: model:ir.cron,name:sale_exception.ir_cron_test_orders
+msgid "Test Draft Orders"
+msgstr "Sprawdzaj oferty"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.exception_partner_sale_warning
+msgid "The customer has a sale warning in his form"
+msgstr "Klient ma ostrzeżenie o sprzedaży w swoim formularzu"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.exception_product_sale_warning
+msgid "The product has a warning in his form"
+msgstr "Produkt posiada ostrzeżenie w swoim formularzu"
+
+#. module: sale_exception
+#: model:exception.rule,description:sale_exception.excep_no_free
+msgid "The total can't be 0"
+msgstr "Suma nie może wynosić 0"
+
+#~ msgid "Sale Exceptions"
+#~ msgstr "Wyjątek od sprzedaży"

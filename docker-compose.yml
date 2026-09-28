@@ -1,0 +1,50 @@
+services:
+  odoo-14:
+    build:
+      context: ./
+      dockerfile: ./docker/dockerfile/Dockerfile
+    command: odoo -c /opt/odoo/server-migrate.conf
+    depends_on:
+      - db-odoo-14
+    ports:
+      - "8014:8069"
+      - "8163:8072"
+    environment:
+      - HOST=db-odoo-14
+      - USER=odoo
+      - PASSWORD=odoo
+    volumes:
+      - odoo-data-14:/var/lib/odoo
+      - ./:/opt/odoo/
+    links:
+      - db-odoo-14:db
+  db-odoo-14:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db-data-14:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5414:5432"
+  pgadmin14:
+    image: dpage/pgadmin4:7.8
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=soporte@solvoweb.com
+      - PGADMIN_DEFAULT_PASSWORD=aZ537866lbm
+      - PGADMIN_LISTEN_PORT=5050
+    ports:
+      - "5014:5050"
+    volumes:
+      - pgadmin14-data:/var/lib/pgadmin
+    depends_on:
+      - db-odoo-14
+    networks:
+      - default
+volumes:
+  odoo-data-14:
+  db-data-14:
+  pgadmin14-data:

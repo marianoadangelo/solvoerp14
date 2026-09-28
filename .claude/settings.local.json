@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker network:*)",
+      "Bash(docker exec:*)",
+      "Bash(docker inspect:*)",
+      "Bash(SOURCE_NETWORK=solvo-erp_default SOURCE_HOST=solvo-erp-db-odoo-13-1 DB_SOURCE=thisisbp DB_NAME=thisisbp COPY_DB=true SOURCE_FILESTORE_CONTAINER=solvo-erp-odoo-13-1 docker-compose:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(DB_NAME=thisisbp docker-compose:*)",
+      "Bash(docker stats:*)",
+      "Bash(docker top:*)"
+    ]
+  }
+}

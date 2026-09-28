@@ -1,0 +1,203 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_commission_geo_assign
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-03-27 15:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.2\n"
+
+#. module: sale_commission_geo_assign
+#: model:ir.actions.act_window,name:sale_commission_geo_assign.action_geo_assign_partner
+msgid "Add Agents with Geo Assign"
+msgstr "Aggiungi agenti con geo-assegnazione"
+
+#. module: sale_commission_geo_assign
+#: model_terms:ir.ui.view,arch_db:sale_commission_geo_assign.wizard_geo_assign_partner_view
+msgid "Apply"
+msgstr "Applica"
+
+#. module: sale_commission_geo_assign
+#: model_terms:ir.ui.view,arch_db:sale_commission_geo_assign.wizard_geo_assign_partner_view
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__check_existing_agents
+msgid "Check Existing Agents"
+msgstr "Verifica agenti esistenti"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model,name:sale_commission_geo_assign.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__agent_country_ids
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_users__agent_country_ids
+msgid "Countries"
+msgstr "Nazioni"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_partner__agent_country_ids
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_users__agent_country_ids
+msgid "Countries where this agent operates"
+msgstr "Nazioni dove opera questo agente"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__display_name
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: sale_commission_geo_assign
+#: model_terms:ir.ui.view,arch_db:sale_commission_geo_assign.wizard_geo_assign_partner_view
+msgid "Do not add new agents if agents are already assigned"
+msgstr "Non aggiungere nuovi agenti se sono già assegnati agenti nel partner"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__no_geo_assign_update
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_users__no_geo_assign_update
+msgid "Do not allow update with Geo Assign"
+msgstr "Non permettere aggiornamento con geo-assegnazione"
+
+#. module: sale_commission_geo_assign
+#: model_terms:ir.ui.view,arch_db:sale_commission_geo_assign.view_partner_form_agent_geo_assign
+msgid "Geo-assign to customers"
+msgstr "Geo-assegnazione clienti"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__id
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_wizard_geo_assign_partner__check_existing_agents
+msgid ""
+"If checked, partners with already assigned agents will be blocked. "
+"Otherwise, found agents will be added"
+msgstr ""
+"Se abilitato, i contatti con agenti già assegnati non saranno aggiornati. Se "
+"non abilitato, gli agenti da assegnare verranno aggiunti a quelli esistenti"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner____last_update
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: sale_commission_geo_assign
+#: model_terms:ir.ui.view,arch_db:sale_commission_geo_assign.view_res_partner_filter_geo_assign
+msgid "No Agents Assigned"
+msgstr "Nessun agente assegnato"
+
+#. module: sale_commission_geo_assign
+#: code:addons/sale_commission_geo_assign/wizard/wizard_geo_assign_partner.py:0
+#, python-format
+msgid "No agents found in the system"
+msgstr "Nessun agente trovato nel sistema"
+
+#. module: sale_commission_geo_assign
+#: code:addons/sale_commission_geo_assign/wizard/wizard_geo_assign_partner.py:0
+#, python-format
+msgid ""
+"Partner %s already has agents. You should remove them or deselect 'Do not "
+"add new agents if agents are already assigned'"
+msgstr ""
+"Il partner %s ha già agenti assegnati. Dovresti rimuoverli o deselezionare "
+"\"Non aggiungere nuovi agenti se sono già assegnati agenti nel partner\""
+
+#. module: sale_commission_geo_assign
+#: code:addons/sale_commission_geo_assign/wizard/wizard_geo_assign_partner.py:0
+#, python-format
+msgid "Partner %s is not allowed to be updated through geo assignation"
+msgstr "Il partner %s non può essere aggiornato tramite geo-assegnazione"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_wizard_geo_assign_partner__replace_existing_agents
+msgid "Replace Existing Agents"
+msgstr "Sostituisci agenti esistenti"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__agent_state_ids
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_users__agent_state_ids
+msgid "States"
+msgstr "Stati"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_partner__agent_state_ids
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_users__agent_state_ids
+msgid "States where this agent operates"
+msgstr "Stati/Province dove opera quest'agente"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model,name:sale_commission_geo_assign.model_wizard_geo_assign_partner
+msgid "Wizard Geo Assign Partner"
+msgstr "Procedura guidata geo-assegnazione agenti"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_partner__agent_zip_from
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_partner__agent_zip_to
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_users__agent_zip_from
+#: model:ir.model.fields,help:sale_commission_geo_assign.field_res_users__agent_zip_to
+msgid "ZIP range where this agent operates"
+msgstr "Intervallo di CAP in cui opera quest'agente"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__agent_zip_from
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_users__agent_zip_from
+msgid "Zip From"
+msgstr "Da CAP"
+
+#. module: sale_commission_geo_assign
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_partner__agent_zip_to
+#: model:ir.model.fields,field_description:sale_commission_geo_assign.field_res_users__agent_zip_to
+msgid "Zip To"
+msgstr "A CAP"
+
+#~ msgid "Check existing agents"
+#~ msgstr "Verifica agenti esistenti"
+
+#~ msgid "Geo assign agents"
+#~ msgstr "Geo-assegnazione agenti"
+
+#, python-format
+#~ msgid ""
+#~ "Partner %s already has agents. You should remove them or deselect 'Check "
+#~ "existing agents'"
+#~ msgstr ""
+#~ "Il contatto %s ha già agenti assegnati. Puoi rimuoverli o deselezionare "
+#~ "il flag 'Verifica agenti esistenti'"
+
+#~ msgid "wizard.geo.assign.partner"
+#~ msgstr "wizard.geo.assign.partner"

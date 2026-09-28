@@ -1,0 +1,36 @@
+.oe_product_cart {
+    .o_wsale_product_btn {
+        input {
+            transform: scale(0);
+            transition: transform ease 200ms 0s;
+        }
+    }
+
+    .o_wsale_product_btn_custom {
+        position: unset;
+        input {
+            transform: scale(1);
+            transition: transform ease 200ms 0s;
+        }
+        .btn {
+            transform: scale(1);
+        }
+    }
+
+    &:hover {
+        input {
+            transform: scale(1);
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        input {
+            transform: scale(1) !important;
+        }
+    }
+}
+
+.oe_product_cart .o_wsale_product_information {
+    flex-direction: column-reverse;
+    display: flex;
+}

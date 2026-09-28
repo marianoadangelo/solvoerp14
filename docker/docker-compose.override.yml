@@ -1,0 +1,5 @@
+version: "2.1"
+services:
+  odoo-14:
+    depends_on:
+      - db-odoo-14

@@ -1,0 +1,456 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_bom_current_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2025-01-15 11:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid ""
+"- All Levels: Allows you to evaluate what is the total potential amount that "
+"could\n"
+"                    be manufactured if all the existing material in the "
+"specified locations were used."
+msgstr ""
+"- Tutti i livelli: consente di valutare qual è la quantità potenziale totale "
+"che potrebbe\n"
+"                    essere prodotta se venisse utilizzato tutto il materiale "
+"esistente nelle posizioni specificate."
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid ""
+"- One Level: Allows you to evaluate what the potential quantity is in the "
+"event\n"
+"                    that only the selected product in particular should be "
+"manufactured. In other\n"
+"                    words, it emulates a manufacturing order."
+msgstr ""
+"- Un livello: consente di valutare qual è la quantità potenziale nel caso in "
+"cui \n"
+"                    solo il prodotto selezionato in particolare debba essere "
+"prodotto. \n"
+"                    In altre parole, emula un ordine di produzione."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__explosion_type__all
+msgid "All Levels"
+msgstr "Tutti i livelli"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid ""
+"As a final comment, it is necessary to indicate that in the event that a "
+"component\n"
+"                    is repeated in different BoMs, it is possible that the "
+"potential quantity is not\n"
+"                    correctly computed since it is not taken into account "
+"that if it is being used by\n"
+"                    a BoM, it cannot be used by another."
+msgstr ""
+"Come commento finale, è necessario indicare che nel caso in cui un "
+"componente\n"
+"                    venga ripetuto in diverse DiBa, è possibile che la "
+"quantità potenziale non\n"
+"                    venga calcolata correttamente poiché non si tiene conto "
+"che se viene utilizzato da\n"
+"                    una DiBa, non può essere utilizzato da un'altra."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__availability
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__availability
+msgid "Availability"
+msgstr "Disponibilità"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__availability__available
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock_line__availability__available
+msgid "Available"
+msgstr "Disponibile"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "BOM Current Stock Report"
+msgstr "Resoconto giacenza attuale DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_id
+msgid "BoM"
+msgstr "DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.act_window,name:mrp_bom_current_stock.mrp_bom_current_stock_action
+#: model:ir.ui.menu,name:mrp_bom_current_stock.mrp_bom_current_stock_menu
+msgid "BoM Current Stock Explosion"
+msgstr "Esploso giacenza attuale DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_level
+msgid "BoM Level"
+msgstr "Livello DiBa"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "BoM Reference"
+msgstr "Riferimento DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_type
+msgid "BoM Type"
+msgstr "Tipo DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__bom_line_id
+msgid "BoM line"
+msgstr "Riga DiBa"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.report,name:mrp_bom_current_stock.action_report_bom_current_stock_pdf
+msgid "BoM: Current Stock Report PDF"
+msgstr "DiBa: resoconto PDF giacenza attuale"
+
+#. module: mrp_bom_current_stock
+#: model:ir.actions.report,name:mrp_bom_current_stock.action_report_bom_current_stock_xlsx
+msgid "BoM: Current Stock Report XLSX"
+msgstr "DiBa: resoconto XLSX giacenza attuale"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Cancel"
+msgstr "Annulla"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Close"
+msgstr "Chiudi"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__create_uid
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__create_date
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__desired_qty
+msgid "Desired Quantity"
+msgstr "Quantità desiderata"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__display_name
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__display_name
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__exclude_location_ids
+msgid "Exclude locations"
+msgstr "Esclude ubicazioni"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Explode"
+msgstr "Espandi"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__explosion_type
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__explosion_type
+msgid "Explosion Type"
+msgstr "Tipo esplosione"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Explosion result"
+msgstr "Risultato espolso"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Export XLSX"
+msgstr "Esporta XLSX"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Go Back"
+msgstr "Indietro"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "It is necessary to differentiate between the two types of explosion."
+msgstr "È necessario distinguere tra i due tipi di esplosione."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock____last_update
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line____last_update
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__write_uid
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__write_date
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Level"
+msgstr "Livello"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__line_ids
+msgid "Line"
+msgstr "Riga"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Location"
+msgstr "Ubicazione"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+msgid "Location:"
+msgstr "Ubicazione:"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_report_mrp_bom_current_stock_report_mrpbom_current_stock_xlsx
+msgid "MRP BOM Current Stock XLSX Report"
+msgstr "Resoconto XLSX giacenza attuale DiBa MRP"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_mrp_bom_current_stock
+msgid "MRP Bom Route Current Stock"
+msgstr "Giacenza attuale rotta DiBa MRP"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model,name:mrp_bom_current_stock.model_mrp_bom_current_stock_line
+msgid "MRP Bom Route Current Stock Line"
+msgstr "Riga giacenza attuale rotta DiBa MRP"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__availability__not_available
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock_line__availability__not_available
+msgid "Not Available"
+msgstr "Non disponibile"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields.selection,name:mrp_bom_current_stock.selection__mrp_bom_current_stock__explosion_type__one
+msgid "One Level"
+msgstr "Un livello"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__parent_bom_id
+msgid "Parent BoM"
+msgstr "DiBa padre"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Parent BoM Ref"
+msgstr "Riferimento DiBa padre"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Parent Product Ref"
+msgstr "Riferimento prodotto padre"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__potential_qty
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Potential Qty"
+msgstr "Q.tà potenziale"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__potential_qty_rounded
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__potential_qty
+msgid "Potential Quantity"
+msgstr "Quantità potenziale"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__potential_qty_rounded
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock_line__potential_qty
+msgid ""
+"Potential quantity that could be manufactured given all current on-hand "
+"stock at the specified locations."
+msgstr ""
+"Quantità potenziale che potrebbe essere prodotta tenendo conto di tutte le "
+"scorte attualmente disponibili nelle ubicazioni indicate."
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Print PDF"
+msgstr "Stampa PDF"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_qty
+msgid "Product Quantity"
+msgstr "Quantità prodotto"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "Product Reference"
+msgstr "Riferimento prodotto"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_tmpl_id
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_uom_id
+msgid "Product Unit of Measure"
+msgstr "Unità di misura del prodotto"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_id
+msgid "Product Variant"
+msgstr "Variante prodotto"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Qty Available (Location)"
+msgstr "Q.tà disponibile (ubicazione)"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__qty_available_in_source_loc
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__qty_available_in_source_loc
+msgid "Qty Available in Source"
+msgstr "Q.tà disponibile in sorgente"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_qty
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.report_mrpbom_current_stock_pdf
+#, python-format
+msgid "Quantity"
+msgstr "Quantità"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__exclude_location_ids
+msgid "Select only the parent location you want to exclude."
+msgstr "Selezionare solo l'ubicazione padre che si vuole escludere."
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form
+msgid "Select product and location to explode"
+msgstr "Selezionare il prodotto e l'ubicazione da esplodere"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "Set the source location for every component."
+msgstr "Impostare l'ubicazione di origine per ogni componente."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__location_id
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__location_id
+msgid "Source location"
+msgstr "Ubicazione di origine"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__bom_id
+msgid "Starting Bill of Materials"
+msgstr "Distinta base di partenza"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock_line__availability
+msgid ""
+"The field shows the availability that you have taking into account the "
+"available quantity that could end up being manufactured."
+msgstr ""
+"Il campo mostra la disponibilità tenendo conto della quantità disponibile "
+"che potrebbe essere prodotta."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__availability
+msgid ""
+"The field shows the availability that you have taking into account the "
+"potential quantity that could end up being manufactured."
+msgstr ""
+"Il campo mostra la disponibilità di cui si dispone tenendo conto della "
+"potenziale quantità che potrebbe essere prodotta."
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock__product_uom_id
+msgid "Unit of Measure"
+msgstr "Unità di misura"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock__product_uom_id
+#: model:ir.model.fields,help:mrp_bom_current_stock.field_mrp_bom_current_stock_line__product_uom_id
+msgid ""
+"Unit of Measure (Unit of Measure) is the unit of measurement for the "
+"inventory control"
+msgstr ""
+"Unità di misura (Unità di misura) è l'unità di misura per il controllo di "
+"inventario"
+
+#. module: mrp_bom_current_stock
+#: code:addons/mrp_bom_current_stock/reports/report_mrpcurrentstock_xlsx.py:0
+#, python-format
+msgid "UoM"
+msgstr "UdM"
+
+#. module: mrp_bom_current_stock
+#: model:ir.model.fields,field_description:mrp_bom_current_stock.field_mrp_bom_current_stock_line__wizard_id
+msgid "Wizard"
+msgstr "Procedura guidata"
+
+#. module: mrp_bom_current_stock
+#: model_terms:ir.ui.view,arch_db:mrp_bom_current_stock.mrp_bom_current_stock_view_form2
+msgid "or"
+msgstr "o"
+
+#~ msgid "Explosion"
+#~ msgstr "Esploso"
+
+#~ msgid "Starting location"
+#~ msgstr "Ubicazione di partenza"
