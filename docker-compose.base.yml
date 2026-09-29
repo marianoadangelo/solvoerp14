@@ -1,0 +1,34 @@
+services:
+  {dockername}:
+    container_name: {dockername}
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: ./repo/docker/dockerfile/Dockerfile
+      args:
+        BUILD_PATH: "repo/"
+    command: python3 /opt/odoo/server/odoo-bin -c /opt/odoo/server.conf
+    ports:
+      - "127.0.0.1:{port}:8069"
+      - "127.0.0.1:{xmlrpcs_port}:8072"
+    environment:
+      - HOST={db_host}
+      - PORT={db_port}
+      - USER={db_user}
+      - PASSWORD={db_password}
+      - ADMIN_PASSWORD={spassw}
+    volumes:
+      - odoo-data-14-{name}:/var/lib/odoo
+      - .repo/:/opt/odoo/
+    networks:
+      - {network_name}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  odoo-data-14-{name}:
+networks:
+  {network_name}:
+    external: {use_external_network}
