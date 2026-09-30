@@ -3,11 +3,9 @@ services:
     container_name: {dockername}
     restart: unless-stopped
     build:
-      context: ./
-      dockerfile: ./repo/docker/dockerfile/Dockerfile
-      args:
-        BUILD_PATH: "repo/"
-    command: python3 /opt/odoo/server/odoo-bin -c /opt/odoo/server.conf
+      context: ./repo
+      dockerfile: ./docker/dockerfile/Dockerfile
+    command: odoo -c /etc/odoo/server.conf
     ports:
       - "127.0.0.1:{port}:8069"
       - "127.0.0.1:{xmlrpcs_port}:8072"
@@ -19,7 +17,8 @@ services:
       - ADMIN_PASSWORD={spassw}
     volumes:
       - odoo-data-14-{name}:/var/lib/odoo
-      - .repo/:/opt/odoo/
+      - ./repo:/opt/odoo/
+      - ./server.conf:/etc/odoo/server.conf
     networks:
       - {network_name}
     logging:
